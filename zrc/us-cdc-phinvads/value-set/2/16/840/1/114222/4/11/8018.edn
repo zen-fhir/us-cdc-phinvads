@@ -1,0 +1,18 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.8018,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "To reflect information on the relationship between the decedent and the person providing demographic information for the decedent. The chosen value set for this relationship follows the PHIR value set used to record possible patient contact relationships in order to maintain consistency between this IG and the death reporting FHIR IG. That value set includes concepts drawn from the V3 role code and the V2 contact relationship value sets.",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8018",
+            :version "1",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

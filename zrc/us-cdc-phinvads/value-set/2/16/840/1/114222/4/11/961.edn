@@ -1,0 +1,18 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.961,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "HL7 version 2.5 Table 0190 Address Type codes.  Information regarding the type of address being passed in the message (e.g., Mailing, Home, Business).",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://terminology.hl7.org/CodeSystem/v2-0190",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.274",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.961",
+            :version "1",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

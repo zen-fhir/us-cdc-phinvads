@@ -1,0 +1,18 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.7890,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "If patient has a poison control record, indicate where the treatment was managed.",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.274",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7890",
+            :version "2",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

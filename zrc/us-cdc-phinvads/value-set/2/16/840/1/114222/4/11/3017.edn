@@ -1,0 +1,22 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.3017,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Lab Test Result that could be used in OBX-5  (PHLIP Flu)",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/v3-nuccProviderCodes",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.289",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3017",
+            :version "14",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

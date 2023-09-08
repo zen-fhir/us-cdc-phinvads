@@ -1,0 +1,18 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.3401,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Type of facility that the patient visited for treatment.",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://terminology.hl7.org/CodeSystem/v3-nuccProviderCodes",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3401",
+            :version "3",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

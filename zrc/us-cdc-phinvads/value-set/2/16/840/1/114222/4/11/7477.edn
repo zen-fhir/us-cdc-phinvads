@@ -1,0 +1,18 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.7477,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Serum paired antibody result. \r\nThis is an interpretation based upon the lab values paired sera testing of specimen 1 (Acute) and Specimen 2 (Convalescent). For Arboviral lab tests, these tests are usually PRNT.",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.274",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7477",
+            :version "1",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

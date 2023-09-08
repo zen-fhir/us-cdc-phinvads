@@ -1,0 +1,24 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.7450,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Identifies the source of information for this immunization record or, more generically, whether the immunization being reported has just been administered (new) or came from other records (historical)",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/v2-0443",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.274",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.293",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.7450",
+            :version "3",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

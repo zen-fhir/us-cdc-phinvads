@@ -1,0 +1,20 @@
+{ns us-cdc-phinvads.value-set.2.16.840.1.114222.4.11.8028,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "2010 BLS Standard Occupational Classification (SOC) coding system used by the NIOSH Industry and Occupation Computerized Coding System (NIOCCS). Occupation describes a set of activities or tasks that individuals are paid to perform or, if unpaid, define a person’s contribution to a household/family business/community. This code system includes 2010 SOC occupation codes with modifications made by CDC for unpaid workers and military occupations. The PH_Industry_CDC_NAICS2012 code system should be used in conjunction with this occupation code system when coding both industry and occupation. For more information and instructions on using this coding system, see the instruction manual for  CDC-Census I&O coding at:  http://www.cdc.gov/niosh/topics/coding/",
+            :zen.fhir/version "0.6.32",
+            :fhir/code-systems #{{:fhir/url "urn:oid:2.16.840.1.114222.4.5.330",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:oid:2.16.840.1.114222.4.5.335",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/soc",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://phinvads.cdc.gov/fhir/ValueSet/2.16.840.1.114222.4.11.8028",
+            :version "2",
+            :ftr {:module "us-cdc-phinvads",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}
